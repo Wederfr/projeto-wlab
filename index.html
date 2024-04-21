@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WLAB</title>
+    <style>
+        body {
+            background-image: url('img/fundolab.png'); 
+            background-repeat: no-repeat; 
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Estilo apenas para o botão LOGIN */
+        #login-button {
+            background-color: #2a02d4; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: default; /* Definindo o cursor como padrão */
+            border-radius: 50px;
+        }
+
+        /* Estilo apenas para o botão ENTRAR */
+        .submit {
+            background-color: #3104fa; 
+            color: white; 
+            font-weight: bold; 
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit:hover {
+            background-color: #2a02d4;
+        }
+
+        .caixa-login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            box-sizing: border-box; 
+        }
+
+        .esqueci-senha {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        h5 {
+            margin-top: 450px;
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: left;
+            color: white; 
+            position: fixed; 
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: rgba(117, 119, 158, 0.5); 
+            padding: 5px 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            margin-bottom: 500px; 
+        }
+
+        .contatos {
+            float: right;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .icones-redes {
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 10px;
+            float: right;
+        }
+
+        .icones-redes a {
+            color: white;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    
+    <section>
+        <div class="caixa-login">
+            <!-- Botão LOGIN -->
+            <input type="submit" value="LOGIN" id="login-button">
+            <form>
+                <input type="text" name="username" id="username" placeholder="Usu&aacute;rio"><br>
+                <input type="password" name="password" placeholder="Senha"><br>
+                <!-- Botão ENTRAR -->
+                <input type="submit" value="ENTRAR" class="submit">
+            </form>
+        </div>
+
+        <div class="esqueci-senha">
+            <h5>ESQUECI A SENHA</h5>
+        </div>
+    
+    </section>
+
+    <footer>
+        <div class="icones-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="contatos">
+            <p>Contatos Suporte</p>
+            <p>Suporte</p>
+        </div>
+        <p>&reg; copyright by Wederfr</p>
+    </footer>
+    
+</body>
+</html>
