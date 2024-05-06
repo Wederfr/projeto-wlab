@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
     <title>WLAB</title>
     <style>
         body {
@@ -138,69 +134,36 @@
 
 <body>
 
-   
     
-        <div class="inside">
-            <section>
-                <div class="caixa-login">
-                    <input type="button" value="LOGIN" id="login-button">
-                    <div id="login-form">
-                        <input type="text" name="username" id="username" placeholder="Usuário"><br>
-                        <input type="password" name="password" id="password" placeholder="Senha"><br>
-                        <input type="button" value="ENTRAR" class="submit" onclick="verificarLogin()">
-                    </div>
-                </div>
-                <div class="esqueci-senha">
-                    <h5>ESQUECI A SENHA</h5>
-                </div>
-            </section>
     
-            <footer>
+    
+
+    <footer>
 
       
-                <div class="copyright">
-                    
-                    <p>&reg; copyright by Wederfr</p>
-                
-                </div>
+        <div class="copyright">
+            
+            <p>&reg; copyright by Wederfr</p>
         
-                <div class="system-name">
-        
-                    <p>WLAB</p>
-                
-                </div>
-        
-                <div class="contatos">
-                    <p>Contatos Suporte:</p>
-                   
-                </div>
-                
-                <div class="icones-redes">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                
-               </footer>
         </div>
-    <!------------------------------------javascript-----------admin/123--------------------------------------------->
-        <script>
-            function verificarLogin() {
-                // Obter os valores do nome de usuário e senha do formulário
-                var username = document.getElementById("username").value;
-                var password = document.getElementById("password").value;
-    
-                // Aqui você faria a verificação real de login no seu sistema
-                // Estou simulando um login bem-sucedido se o nome de usuário for "admin" e a senha for "123"
-                if (username === "admin" && password === "123") {
-                    // Se o login for bem-sucedido, redirecione para index2.html
-                    window.location.href = "index2.html";
-                } else {
-                    // Se o login falhar, exiba uma mensagem de erro
-                    alert("Usuário ou senha incorretos. Por favor, tente novamente.");
-                }
-            }
-        </script>
-  <!------------------------------------javascript-------------------------------------------------------->  
+
+        <div class="system-name">
+
+            <p>WLAB</p>
+        
+        </div>
+
+        <div class="contatos">
+            <p>Contatos Suporte:</p>
+           
+        </div>
+        
+        <div class="icones-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        
+       </footer>
+   
 </body>
-    
 </html>
