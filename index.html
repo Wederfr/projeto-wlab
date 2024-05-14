@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-    <title>WLAB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <style>
+        
+        .inside-wrapper {
+            margin-bottom: 70px; 
+        
+        }
+
+        
+        .inside {
+            width: 80vw; 
+            margin: 0 auto; 
+            box-sizing: border-box; 
+            position: relative; 
+        }
+
         
         body {
             background-image: url('img/fundolab.png'); 
@@ -17,7 +29,6 @@
             overflow: auto;
         }
 
-       
         #login-button {
             background-color: rgb(112, 112, 180); 
             border: none;
@@ -30,9 +41,9 @@
             margin: 4px 2px;
             cursor: default; 
             border-radius: 50px;
+            margin-top: 400px;
         }
 
-       
         .submit {
             background-color:  rgb(112, 112, 180); 
             color: white; 
@@ -68,19 +79,20 @@
         }
 
         .esqueci-senha {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             text-align: center;
-            margin-top: 10px;
+            margin-top: 300px;
         }
 
         h5 {
-            margin-top: 450px;
             text-decoration: underline;
             color: blue;
             cursor: pointer;
         }
 
         footer {
-           
             color: white; 
             position: fixed; 
             bottom: 0;
@@ -92,55 +104,41 @@
             margin: 0;
             box-sizing: border-box;
             display: flex;
-            
-         
-            
         }
 
         .copyright{
-
             margin-top: -5px;
             margin-left: 10px;
         }
 
         .system-name{
-          
             margin-top: -5px;
             margin-left: 485px;
-            
         }
 
-       
         .contatos {
-           
-           margin-top: -5px;
-           margin-left: 450px;
-           
+            margin-top: -5px;
+            margin-left: 450px;
         }
 
         .icones-redes {
            margin-top: 10px;
-           
-            
         }
 
         .icones-redes a {
-            
             color: white;
             font-size: 20px;
             margin-left: 10px;
-            
         }
     </style>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 
 <body>
-
    
-    
+    <div class="inside-wrapper">
+        
         <div class="inside">
             <section>
                 <div class="caixa-login">
@@ -155,53 +153,43 @@
                     <h5>ESQUECI A SENHA</h5>
                 </div>
             </section>
-    
-            <footer>
-
-      
-                <div class="copyright">
-                    
-                    <p>&reg; copyright by Wederfr</p>
-                
-                </div>
-        
-                <div class="system-name">
-        
-                    <p>WLAB</p>
-                
-                </div>
-        
-                <div class="contatos">
-                    <p>Contatos Suporte:</p>
-                   
-                </div>
-                
-                <div class="icones-redes">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                
-               </footer>
         </div>
-    <!------------------------------------javascript-----------admin/123--------------------------------------------->
-        <script>
-            function verificarLogin() {
-                // Obter os valores do nome de usuário e senha do formulário
-                var username = document.getElementById("username").value;
-                var password = document.getElementById("password").value;
     
-                // Aqui você faria a verificação real de login no seu sistema
-                // Estou simulando um login bem-sucedido se o nome de usuário for "admin" e a senha for "123"
-                if (username === "admin" && password === "123") {
-                    // Se o login for bem-sucedido, redirecione para index2.html
-                    window.location.href = "index2.html";
-                } else {
-                    // Se o login falhar, exiba uma mensagem de erro
-                    alert("Usuário ou senha incorretos. Por favor, tente novamente.");
-                }
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>&reg; copyright by Wederfr</p>
+        </div>
+
+        <div class="system-name">
+            <p>WLAB</p>
+        </div>
+
+        <div class="contatos">
+            <p>Contatos Suporte:</p>
+        </div>
+        
+        <div class="icones-redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    </div>
+</div>
+
+    <!-- Script JavaScript -->
+    <script>
+        function verificarLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "123") {
+                window.location.href = "index2.html";
+            } else {
+                alert("Usuário ou senha incorretos. Por favor, tente novamente.");
             }
-        </script>
-  <!------------------------------------javascript-------------------------------------------------------->  
+        }
+    </script>
 </body>
-    
 </html>
