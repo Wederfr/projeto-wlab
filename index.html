@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WLAB</title>
     <style>
         
-        .inside-wrapper {
-            margin-bottom: 70px; 
         
-        }
 
-        
-        .inside {
-            width: 80vw; 
-            margin: 0 auto; 
-            box-sizing: border-box; 
-            position: relative; 
-        }
 
-        
         body {
-            background-image: url('img/fundolab.png'); 
-            background-repeat: no-repeat; 
+            background-image: url('img/fundolab.png');
+            background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
             padding: 0;
             overflow: auto;
         }
 
+        .inside {
+            
+            position: relative;
+            margin-bottom: -100px;
+            
+           
+        }
+
         #login-button {
-            background-color: rgb(112, 112, 180); 
+            background-color: rgb(112, 112, 180);
             border: none;
             color: white;
             padding: 10px 20px;
@@ -39,15 +37,15 @@
             display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
-            cursor: default; 
+            cursor: default;
             border-radius: 50px;
-            margin-top: 400px;
+            margin-top: 800px;
         }
 
         .submit {
-            background-color:  rgb(112, 112, 180); 
-            color: white; 
-            font-weight: bold; 
+            background-color: rgb(112, 112, 180);
+            color: white;
+            font-weight: bold;
             font-size: 16px;
             padding: 10px 20px;
             border: none;
@@ -75,7 +73,7 @@
             margin: 10px;
             border: 1px solid #ccc;
             border-radius: 50px;
-            box-sizing: border-box; 
+            box-sizing: border-box;
         }
 
         .esqueci-senha {
@@ -83,7 +81,7 @@
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
-            margin-top: 300px;
+            margin-top: 500px;
         }
 
         h5 {
@@ -131,30 +129,30 @@
             margin-left: 10px;
         }
     </style>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-   
-    <div class="inside-wrapper">
-        
-        <div class="inside">
-            <section>
-                <div class="caixa-login">
-                    <input type="button" value="LOGIN" id="login-button">
-                    <div id="login-form">
-                        <input type="text" name="username" id="username" placeholder="Usuário"><br>
-                        <input type="password" name="password" id="password" placeholder="Senha"><br>
-                        <input type="button" value="ENTRAR" class="submit" onclick="verificarLogin()">
-                    </div>
-                </div>
-                <div class="esqueci-senha">
-                    <h5>ESQUECI A SENHA</h5>
-                </div>
-            </section>
+
+
+
+    <div class="inside">
+
+        <div class="caixa-login">
+            <input type="button" value="LOGIN" id="login-button">
+            <div id="login-form">
+                <input type="text" name="username" id="username" placeholder="Usuário"><br>
+                <input type="password" name="password" id="password" placeholder="Senha"><br>
+                <input type="button" value="ENTRAR" class="submit" onclick="verificarLogin()">
+            </div>
         </div>
-    
+        <div class="esqueci-senha">
+            <h5>ESQUECI A SENHA</h5>
+        </div>
+
+    </div>
+
 
     <!-- Footer -->
     <footer>
@@ -169,14 +167,14 @@
         <div class="contatos">
             <p>Contatos Suporte:</p>
         </div>
-        
+
         <div class="icones-redes">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
-    </div>
-</div>
+
+
 
     <!-- Script JavaScript -->
     <script>
@@ -185,11 +183,12 @@
             var password = document.getElementById("password").value;
 
             if (username === "admin" && password === "123") {
-                window.location.href = "index2.html";
+                window.location.href = "menu.html";
             } else {
                 alert("Usuário ou senha incorretos. Por favor, tente novamente.");
             }
         }
     </script>
 </body>
+
 </html>
