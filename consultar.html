@@ -1,133 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>WLAB</title>
-    
+
     <style>
-        
         body {
-            background-image: url('img/fundolab.png'); 
-            background-repeat: no-repeat; 
+
+            background-image: url('img/fundolab.png');
+            background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
             padding: 0;
             overflow: auto;
-            display: flex;
-           
-        }
-
-        .title{
-
-            background-color: rgb(112, 112, 180);
-            border-radius: 40px; 
-            border: none; 
-            color: white;
-            padding: 01px 80px;
-            margin: 5px;
-            font-size: 20px;
-            margin: 10px  0;
             text-align: center;
 
+
+
         }
 
+        .title {
+
+            background-color: rgb(112, 112, 180);
+            border-radius: 40px;
+            color: white;
+            font-size: 20px;
+            display: inline-block;
+            padding: 1px 100px;
+            margin-top: 10px;
+
+        }
+
+        .form {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .nome,
+        .id,
+        .sn {
+
+            display: inline-flex;
+            justify-content: center;
+
+
+        }
+
+        .nome h3,
+        .id h3,
+        .sn h3 {
+            margin: 0;
+            margin-right: 10px;
+
+        }
+
+        .nome {
+
+            margin-right: 33px;
+        }
+
+
+        button {
+
+            background-color: rgb(112, 112, 180);
+            border-radius: 40px;
+            color: white;
+            font-size: 10px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+
+            background-color: #2a02d4;
+        }
+
+        .button-back {
+
+            margin-top: 150px;
+            margin-right: 1200px;
+        }
+
+
+
         footer {
-           
-           color: white; 
-           position: fixed; 
-           bottom: 0;
-           left: 0;
-           width: 100%;
-           height: 50px;
-           background-color: rgba(117, 119, 158, 0.5); 
-           padding: 5px 0;
-           margin: 0;
-           box-sizing: border-box;
-           display: flex;
-       }
 
-           
-           
-        .copyright{
+            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: rgba(117, 119, 158, 0.5);
+            padding: 5px 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+        }
 
-           margin-top: -5px;
-           margin-left: 10px;
-       }
 
-       .system-name{
-         
-           margin-top: -5px;
-           margin-left: 485px;
-           
-       }
 
-      
-       .contatos {
-          
-          margin-top: -5px;
-          margin-left: 450px;
-          
-       }
+        .copyright {
 
-       .icones-redes {
-          margin-top: 10px;
-          
-           
-       }
+            margin-top: -5px;
+            margin-left: 10px;
+        }
 
-       .icones-redes a {
-           
-           color: white;
-           font-size: 20px;
-           margin-left: 10px;
-           
-       }
-    
+        .system-name {
+
+            margin-top: -5px;
+            margin-left: 485px;
+
+        }
+
+
+        .contatos {
+
+            margin-top: -5px;
+            margin-left: 450px;
+
+        }
+
+        .icones-redes {
+            margin-top: 10px;
+
+
+        }
+
+        .icones-redes a {
+
+            color: white;
+            font-size: 20px;
+            margin-left: 10px;
+
+        }
     </style>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
 
     <div class="inside">
 
-<div class="title">
+        <div class="title">
 
-    <p>CONSULTAR</p>
+            <p>CONSULTAR</p>
 
-</div>
+        </div>
+        <div class="form">
+            <div class="nome">
+                <h3>NOME</h3><input type="text" name="nome" id="name">
+            </div>
+            <div class="id">
+                <h3>ID</h3><input type="text" name="id" id="identification">
+            </div>
+            <div class="sn">
+                <h3>SN</h3><input type="text" name="sn" id="serial number">
+            </div>
+        </div>
+
+        <button>
+            <p>CONSULTAR</p>
+        </button>
+
+        <div class="button-back">
+            <a href="menu.html"><button>
+                    <p>VOLTAR AO MENU</p>
+                </button></a>
+        </div>
+
+
+    </div>
 
     <footer>
 
-      
+
         <div class="copyright">
-            
+
             <p>&reg; copyright by Wederfr</p>
-        
+
         </div>
 
         <div class="system-name">
 
             <p>WLAB</p>
-        
+
         </div>
 
         <div class="contatos">
             <p>Contatos Suporte:</p>
-           
+
         </div>
-        
+
         <div class="icones-redes">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
-        
-       </footer>
 
-    </div>
-   
+    </footer>
+
+
+
 </body>
+
 </html>
-</body>
