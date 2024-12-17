@@ -1,0 +1,118 @@
+body {
+    background-image: url('img/fundolab.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.inside {
+    
+    position: relative;
+    margin-bottom: -100px;
+    
+   
+}
+
+#login-button {
+    background-color: rgb(112, 112, 180);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: default;
+    border-radius: 50px;
+    margin-top: 800px;
+}
+
+.submit {
+    background-color: rgb(112, 112, 180);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #2a02d4;
+}
+
+.caixa-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.esqueci-senha {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 500px;
+}
+
+h5 {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+footer {
+    color: white; 
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(117, 119, 158, 0.5); 
+    padding: 5px 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.copyright{
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.system-name{
+    margin-top: -5px;
+    margin-left: 485px;
+}
+
+.contatos {
+    margin-top: -5px;
+    margin-left: 450px;
+}
+
+.icones-redes {
+   margin-top: 10px;
+}
+
+.icones-redes a {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}

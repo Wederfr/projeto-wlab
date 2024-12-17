@@ -1,0 +1,133 @@
+body {
+
+    background-image: url('img/fundolab.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    text-align: center;
+
+
+
+}
+
+.title {
+
+    background-color: rgb(112, 112, 180);
+    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 1px 100px;
+    margin-top: 10px;
+
+}
+
+.form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nome,
+.id,
+.sn {
+
+    display: inline-flex;
+    justify-content: center;
+
+
+}
+
+.nome h3,
+.id h3,
+.sn h3 {
+    margin: 0;
+    margin-right: 10px;
+
+}
+
+.nome {
+
+    margin-right: 33px;
+}
+
+
+button {
+
+    background-color: rgb(112, 112, 180);
+    border-radius: 40px;
+    color: white;
+    font-size: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: #2a02d4;
+}
+
+.button-back {
+
+    margin-top: 150px;
+    margin-right: 1200px;
+}
+
+
+
+footer {
+
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(117, 119, 158, 0.5);
+    padding: 5px 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+
+.copyright {
+
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.system-name {
+
+    margin-top: -5px;
+    margin-left: 485px;
+
+}
+
+
+.contatos {
+
+    margin-top: -5px;
+    margin-left: 450px;
+
+}
+
+.icones-redes {
+    margin-top: 10px;
+
+
+}
+
+.icones-redes a {
+
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
